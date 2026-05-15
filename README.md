@@ -37,4 +37,16 @@ EOF
 
 git add README.md
 git commit -m "docs: record another rejected bounty + lesson"
+git push origin maincd \~/termux-bitcoin-learning
+
+cat >> README.md << 'EOF'
+
+## Progress Update - $(date)
+- Stopped chasing big complex bounties
+- Committing to only "good first issue" and documentation tasks for now
+
+EOF
+
+git add README.md
+git commit -m "docs: committing to beginner-friendly issues only"
 git push origin main
